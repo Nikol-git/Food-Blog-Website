@@ -1,0 +1,296 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#fff8e8;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+.nav-link:hover {
+    color: #bd0d0d;
+}
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown link */
+.dropdown .nav-link {
+    cursor: pointer;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+/* Hidden dropdown menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 100;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Dropdown items */
+.dropdown-content a {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+
+}
+
+/* Hover highlight */
+.dropdown-content a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Show menu when hovering on dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Optional: change link color on hover */
+.dropdown:hover .nav-link {
+    color: #d9534f; /* red-ish; change if needed */
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile{
+    color: rgb(110, 15, 15);
+    font-size: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.profile:hover{
+    color: #bd0d0d;
+}
+
+.logout-btn{
+    display: inline-block;
+    margin-top: 5px;
+    background-color: rgb(110, 15, 15);
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.logout-btn:hover{
+    background-color: #bd0d0d;
+}
+.comments {
+    width: 60%;
+    margin: 40px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* --- FORM --- */
+.comments form {
+    display: flex;
+    flex-direction: column;
+}
+
+.comments textarea {
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    resize: none;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.comments textarea:focus {
+    border-color: #551004;
+    box-shadow: 0 0 6px rgba(255, 173, 66, 0.5);
+}
+
+.comments input[type="submit"] {
+    width: 150px;
+    margin-top: 15px;
+    padding: 10px;
+    background: #551004;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.comments input[type="submit"]:hover {
+    background: #7b1605;
+}
+
+/* --- SUCCESS & ERROR MESSAGES --- */
+.success {
+    color: #22aa33;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.error {
+    color: #cc0000;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* --- COMMENT LIST --- */
+.comment-list {
+    margin-top: 30px;
+}
+
+.comment-item {
+    background: #fafafa;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border-left: 5px solid #551004;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.comment-item p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.comment-item strong {
+    color: #551004;
+    font-size: 16px;
+}
+
+.comment-item small {
+    display: block;
+    margin-top: 5px;
+    color: #777;
+    font-size: 13px;
+}
+
+/* Footer Base */
+.footer {
+     background-color: #fff8e8;
+    color: #000000;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Contact Section */
+.footer-content h3,
+.footer-social h3 {
+    margin-bottom: 15px;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+/* Social Section */
+.footer-social {
+    min-width: 250px;
+}
+
+/* Social Section */
+.social-icons {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+/* Individual social items */
+.social-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.social-icons img {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.social-icons p {
+    margin: 0;
+    font-size: 15px;
+}
+
+
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .featured-recipes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container div {
+        flex: 1 1 45%;
+    }
+}
+
+/* --- MOBILE RESPONSIVE --- */
+@media (max-width: 768px) {
+    .comments {
+        width: 95%;
+        padding: 15px;
+    }
+}

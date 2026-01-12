@@ -1,0 +1,354 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff8e8;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+.nav-link:hover {
+    color: #bd0d0d;
+}
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown link */
+.dropdown .nav-link {
+    cursor: pointer;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+/* Hidden dropdown menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 100;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Dropdown items */
+.dropdown-content a {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+
+}
+
+/* Hover highlight */
+.dropdown-content a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Show menu when hovering on dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Optional: change link color on hover */
+.dropdown:hover .nav-link {
+    color: #d9534f; /* red-ish; change if needed */
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile{
+    color: rgb(110, 15, 15);
+    font-size: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.profile:hover{
+    color: #bd0d0d;
+}
+
+.logout-btn{
+    display: inline-block;
+    margin-top: 5px;
+    background-color: rgb(110, 15, 15);
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.logout-btn:hover{
+    background-color: #bd0d0d;
+}
+.login-btn{
+    display: inline-block;
+    margin-top: 5px;
+    background-color: rgb(110, 15, 15);
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.login-btn:hover{
+    background-color: #bd0d0d;
+}
+
+
+/* --- Category Section --- */
+.cat-tittle {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2rem;
+}
+
+.image-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.image-container div {
+    flex: 1 1 150px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+/* --- Featured Recipes --- */
+.feat-tittle {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+    color: #222;
+}
+
+.featured-recipes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 20px;
+}
+
+.recipe-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 15px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.recipe-card h3 {
+    margin: 15px 0 10px;
+    font-size: 1.2rem;
+    color: #222;
+}
+
+.recipe-card p {
+    font-size: 0.95rem;
+    color: #555;
+    height: 40px;
+    overflow: hidden;
+}
+
+.bnt-feat {
+    margin-top: 10px;
+    padding: 6px 12px;
+    background: #ff7979;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.bnt-feat:hover {
+    background: #ff4d4d;
+}
+
+/* --- Modal --- */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    overflow: auto;
+}
+
+.modal-content {
+    background: #fff;
+    margin: 40px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 12px;
+    max-height: 80vh;
+    overflow-y: auto;
+    animation: fadeIn 0.2s ease;
+}
+
+#recipeModal .modal-content img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 60vh;
+    object-fit: contain;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+
+/* Footer Base */
+.footer {
+     background-color: #fff8e8;
+    color: #000000;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Contact Section */
+.footer-content h3,
+.footer-social h3 {
+    margin-bottom: 15px;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+/* Social Section */
+.footer-social {
+    min-width: 250px;
+}
+
+/* Social Section */
+.social-icons {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+/* Individual social items */
+.social-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.social-icons img {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.social-icons p {
+    margin: 0;
+    font-size: 15px;
+}
+
+
+/* Responsive */
+@media(max-width:768px){
+    .recipe-card {
+        flex-direction: column;
+    }
+    .recipe-card img {
+        width: 100%;
+        height: auto;
+    }
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}

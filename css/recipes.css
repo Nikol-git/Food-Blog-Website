@@ -1,0 +1,295 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff8e8;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+.nav-link:hover {
+    color: #bd0d0d;
+}
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown link */
+.dropdown .nav-link {
+    cursor: pointer;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+/* Hidden dropdown menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 100;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Dropdown items */
+.dropdown-content a {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+
+}
+
+/* Hover highlight */
+.dropdown-content a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Show menu when hovering on dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Optional: change link color on hover */
+.dropdown:hover .nav-link {
+    color: #d9534f; /* red-ish; change if needed */
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile{
+    color: rgb(110, 15, 15);
+    font-size: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.profile:hover{
+    color: #bd0d0d;
+}
+
+.logout-btn{
+    display: inline-block;
+    margin-top: 5px;
+    background-color: rgb(110, 15, 15);
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.logout-btn:hover{
+    background-color: #bd0d0d;
+}
+
+.login-btn{
+    display: inline-block;
+    margin-top: 5px;
+    background-color: rgb(110, 15, 15);
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.login-btn:hover{
+    background-color: #bd0d0d;
+}
+
+
+/* Recipes */
+.page-title{
+    text-align: center;
+    color: #4a0505;
+    
+}
+.recipes-container {
+    max-width: 1000px;
+    padding: 0 40px;
+  
+}
+.recipe-card {
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 8px rgba(103, 72, 72, 0.1);
+}
+.recipe-card img {
+    width: 300px;
+    object-fit: cover;
+}
+.recipe-info {
+    padding: 20px;
+    flex: 1;
+}
+.recipe-info h3 {
+    margin-top: 0;
+}
+.recipe-actions {
+    margin-top: 15px;
+}
+.recipe-actions button,
+.recipe-actions a {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.heart {
+    background-color: #fff;
+    color: #ff4c4c;
+    border: 1px solid #ff4c4c;
+    transition: 0.3s;
+}
+.heart:hover {
+    background-color: #ff4c4c;
+    color: #fff;
+}
+
+.heart {
+    background-color: #fff;
+    color: #ff4c4c;
+    border: 1px solid #ff4c4c;
+    transition: 0.3s;
+}
+
+/* WHEN LIKED */
+.heart.liked {
+    background-color: #ff4c4c;
+    color: #fff;
+}
+
+.heart.liked i {
+    color: white;
+}
+
+.comment-btn {
+    background-color: #bd0d0d;
+    color: #fff;
+    transition: 0.3s;
+}
+.comment-btn:hover {
+    background-color:  #9c0d0d;
+}
+
+
+/* Footer Base */
+.footer {
+     background-color: #fff8e8;
+    color: #000000;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Contact Section */
+.footer-content h3,
+.footer-social h3 {
+    margin-bottom: 15px;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+/* Social Section */
+.footer-social {
+    min-width: 250px;
+}
+
+/* Social Section */
+.social-icons {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+/* Individual social items */
+.social-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.social-icons img {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.social-icons p {
+    margin: 0;
+    font-size: 15px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .recipe-card {
+        flex-direction: column;
+    }
+    .recipe-card img {
+        width: 100%;
+        height: auto;
+    }
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
