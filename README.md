@@ -1,17 +1,17 @@
 ## Hospital Management System
 
 ## Prerequisites
--Install XAMPP web server
--Any Editor (Preferably VS Code or Sublime Text)
--Any web browser with latest version
+- Install XAMPP web server
+- Any Editor (Preferably VS Code or Sublime Text)
+- Any web browser with latest version
 
 ## Languages and Technologies used
--HTML5/CSS3
--JavaScript (to create dynamically updating content)
--Bootstrap (An HTML, CSS, and JS library)
--XAMPP (A web server by Apache Friends)
--Php
--MySQL (An RDBMS that uses SQL)
+- HTML5/CSS3
+- JavaScript (to create dynamically updating content)
+- Bootstrap (An HTML, CSS, and JS library)
+- XAMPP (A web server by Apache Friends)
+- Php
+- MySQL (An RDBMS that uses SQL)
 
 ## Steps to run the project in your machine
 -Download and install XAMPP in your machine
