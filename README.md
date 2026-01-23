@@ -1,4 +1,4 @@
-## Food Blog (NOT FINISHED)
+## Food Blog 
 
 
 ## Prerequisites
@@ -74,7 +74,3 @@ This page allows a logged-in user to edit one of their own recipes. If the user 
 When the page loads, it retrieves the selected recipe’s current title, description, and image and pre-fills them into an edit form. The user can update the recipe title and description and optionally upload a new image. If no new image is uploaded, the existing one is kept.
 After submitting the form, the recipe is updated in the database. A confirmation popup is shown to inform the user that the update was successful, and the user can return to their profile page afterward.
 <img width="1918" height="863" alt="Screenshot 2026-01-23 190349" src="https://github.com/user-attachments/assets/7b5dd86d-8a87-4c2e-a349-14d9eba8c965" />
-
-
-
-
