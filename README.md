@@ -1,4 +1,4 @@
-## Food Blog
+## Food Blog (NOT FINISHED)
 
 
 ## Prerequisites
