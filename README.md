@@ -1,5 +1,6 @@
 ## Food Blog
 
+
 ## Prerequisites
 - Install XAMPP web server
 - Any Editor (Preferably VS Code)
